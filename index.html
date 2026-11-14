@@ -168,6 +168,52 @@ main{max-width:720px;margin:auto;padding:24px 20px 48px}.brand{display:flex;alig
 .concept-title-wrap h1.reference-script-heading img{width:100%!important;max-width:760px!important;height:auto!important;object-fit:contain!important}
 .door-title-wrap h2{font-family:'Kaushan Script','SprachboxSchwung',cursive!important;font-style:normal!important;font-weight:400!important;letter-spacing:-.025em!important}
 @media(max-width:530px){.concept-title-wrap{padding-inline:clamp(15px,5vw,26px)!important}.door-title-wrap h2{font-size:clamp(44px,10vw,66px)!important}}
+
+/* Korrektur: Schriftzug auf schmalen Bildschirmen mit deutlichem Sicherheitsabstand */
+.concept-title-wrap {
+  width:100% !important;
+  max-width:100% !important;
+  padding:0 !important;
+  margin-left:auto !important;
+  margin-right:auto !important;
+  overflow:visible !important;
+}
+.concept-title-wrap h1.reference-script-heading {
+  width:100% !important;
+  max-width:100% !important;
+  margin:0 auto !important;
+  padding:0 !important;
+  display:flex !important;
+  justify-content:center !important;
+}
+.concept-title-wrap h1.reference-script-heading img {
+  display:block !important;
+  width:80% !important;
+  max-width:660px !important;
+  height:auto !important;
+  object-fit:contain !important;
+  margin:0 auto !important;
+}
+/* Schrift wird aus der HTML-Datei selbst geladen, nicht von Google Fonts */
+.door-title-wrap h2 {
+  font-family:'SprachboxSchwung', cursive !important;
+  font-style:italic !important;
+  font-weight:700 !important;
+  letter-spacing:0 !important;
+  font-size:clamp(44px,9.5vw,75px) !important;
+  line-height:1.2 !important;
+}
+@media(max-width:530px) {
+  .concept-title-wrap h1.reference-script-heading img {width:80% !important;}
+  .door-title-wrap h2 {font-size:clamp(42px,9vw,62px) !important;}
+}
+
+
+/* Vertikaler Sicherheitsabstand für den Schriftzug auf allen Geräten */
+.concept-title-wrap { margin-top:18px!important; margin-bottom:18px!important; padding-top:18px!important; padding-bottom:18px!important; overflow:visible!important; }
+.concept-title-wrap h1.reference-script-heading { overflow:visible!important; line-height:normal!important; padding-block:6px!important; }
+.concept-title-wrap h1.reference-script-heading img { width:73%!important; max-width:600px!important; height:auto!important; object-fit:contain!important; }
+@media(max-width:530px){ .concept-title-wrap {padding-top:20px!important;padding-bottom:20px!important;margin-top:15px!important;margin-bottom:15px!important;} .concept-title-wrap h1.reference-script-heading img {width:73%!important;} }
 </style></head><body><main id="app"></main><div id="legal-root" style="max-width:720px;margin:auto;padding:0 20px 30px"><nav class="legal-links" aria-label="Rechtliche Informationen"><button id="imprintButton" aria-controls="imprint" aria-expanded="false">Impressum</button><button id="privacyButton" aria-controls="privacy" aria-expanded="false">Datenschutzerklärung</button></nav><section id="imprint" class="legal-panel" hidden tabindex="-1">
 <h2>Impressum</h2>
 <p><strong>Angaben gemäß § 5 DDG</strong></p>
