@@ -222,6 +222,21 @@ main{max-width:720px;margin:auto;padding:24px 20px 48px}.brand{display:flex;alig
 .concept-title-wrap h1.reference-script-heading {height:auto !important;line-height:normal !important;padding:0 !important;overflow:visible !important;}
 .concept-title-wrap h1.reference-script-heading img {width:90% !important;max-width:740px !important;height:auto !important;object-fit:contain !important;}
 @media(max-width:530px){.concept-title-wrap h1.reference-script-heading img{width:90% !important;}}
+
+/* Gebärdennamen: durchgängige fließende Schreibschrift, lokal eingebettet.
+   Z003 ist deutlich handschriftlicher als die vorherige Lobster-Two-Schrift. */
+.door-title-wrap h2,
+.door-heading .door-title-wrap h2 {
+  font-family:'SprachboxHandschrift',cursive !important;
+  font-style:italic !important;
+  font-weight:400 !important;
+  letter-spacing:-.025em !important;
+  font-size:clamp(57px,12vw,88px) !important;
+  line-height:1.35 !important;
+  padding:0.12em 0.08em 0.2em !important;
+  overflow:visible !important;
+}
+@media(max-width:530px){.door-title-wrap h2,.door-heading .door-title-wrap h2{font-size:clamp(50px,11vw,68px) !important;}}
 </style></head><body><main id="app"></main><div id="legal-root" style="max-width:720px;margin:auto;padding:0 20px 30px"><nav class="legal-links" aria-label="Rechtliche Informationen"><button id="imprintButton" aria-controls="imprint" aria-expanded="false">Impressum</button><button id="privacyButton" aria-controls="privacy" aria-expanded="false">Datenschutzerklärung</button></nav><section id="imprint" class="legal-panel" hidden tabindex="-1">
 <h2>Impressum</h2>
 <p><strong>Angaben gemäß § 5 DDG</strong></p>
